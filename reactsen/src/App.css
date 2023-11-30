@@ -6,7 +6,11 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+body {
+  background: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +38,53 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.name {
+  font-family: "Arial", sans-serif;
+  font-size: 2em;
+  color: rgb(10, 10, 10);
+  background: violet;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(1, 182, 206, 0.5);
+  float: left;
+}
+.title-1 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-size: 50px;
+  background: url(back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.title-1:hover {
+  cursor: pointer;
+  background: rgba(247, 247, 249, 0.49);
+  color: blue;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(64, 64, 64, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 3px solid rgb(5, 163, 255);
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(5, 163, 255);
+  background: url(back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
   }
 }
