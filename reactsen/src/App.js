@@ -1,10 +1,27 @@
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [numbr, setNumbr] = useState(1);
+
+  const increaseNumbr = () => {
+    setNumbr(numbr + 1);
+  };
+
+  const decreaseNumbr = () => {
+    setNumbr(numbr - 1);
+  };
+
+  const resetNumbr = () => {
+    setNumbr(1);
+  };
+
   return (
     <div className="App">
-      <h1 className="name">Cervera</h1>
-      <h1 className="title-1">Implemting CSS</h1>
+      <button onClick={increaseNumbr}>Increase Number</button>
+      <button onClick={decreaseNumbr}>Decrease Number</button>
+      <button onClick={resetNumbr}>Reset Number</button>
+      <h1 className="name">{numbr}</h1>
     </div>
   );
 }

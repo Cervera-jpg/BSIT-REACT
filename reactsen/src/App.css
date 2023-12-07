@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -87,4 +87,82 @@ body {
   100% {
     background-position: 2000px 0;
   }
+} */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: #050505;
+  background: linear-gradient(
+    135deg,
+    rgba(33, 150, 243, 0.7),
+    rgba(0, 188, 212, 0.7)
+  );
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.8);
+  /* float: left; */
+}
+
+.title-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: #1f44e9;
+  background: rgba(249, 250, 254, 0.09);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px, 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 4px solid rgba(249, 250, 254, 0.31);
+}
+
+.title-1:hover {
+  background: rgba(249, 249, 255, 0.49);
+  color: aqua;
+  border-radius: 10px;
+  box-shadow: 0 4px, 30px rgba(64, 64, 64, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 3px solid rgba(255, 255, 255, 0.19);
 }
